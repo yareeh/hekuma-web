@@ -16,6 +16,9 @@
   display: flex;
   flex-direction: column;
   max-width: 1280px;
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Header - transparent with minimal styling */
@@ -116,6 +119,9 @@
   justify-content: center;
   padding: 0;
   margin: 0;
+  min-height: 100vh;
+  height: auto;
+  padding-top: 80px; /* Account for header */
 }
 
 .heroBackground {
@@ -138,19 +144,19 @@
   z-index: 3;
   width: 100%;
   max-width: 800px;
-  padding: 3rem;
+  padding: 1.5rem;
   margin: 0 auto;
   text-align: center;
   color: white;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .heroTitle {
-  font-size: 3.5rem;
+  font-size: 2.5rem; /* Smaller on mobile */
   font-weight: 800;
   color: white;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
+  margin-bottom: 1rem;
+  line-height: 1.2;
   letter-spacing: -0.5px;
   /* Remove text-stroke that causes artifacts */
   -webkit-text-stroke: 0;
@@ -161,9 +167,9 @@
 }
 
 .heroText {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.95);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   line-height: 1.6;
   font-weight: 600;
   /* Remove text-stroke that causes artifacts */
@@ -178,14 +184,17 @@
   background-color: rgb(16, 185, 129);
   color: white;
   font-weight: 600;
-  padding: 0.875rem 2rem;
+  padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   transition: all 0.2s ease;
-  display: inline-block;
+  display: block;
   letter-spacing: 0.5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   border: none;
   text-transform: uppercase;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .joinButton:hover {
@@ -196,8 +205,8 @@
 
 /* Combined About and Join Sections Container */
 .combinedSection {
-  margin: 6rem 2rem;
-  margin-top: -300px; /* Create overlap with hero section */
+  margin: 1rem;
+  margin-top: -150px; /* Less overlap on mobile */
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
@@ -232,7 +241,7 @@
 /* About Section styling inside combined container */
 .aboutSection {
   margin: 0;
-  padding: 3rem;
+  padding: 1.5rem;
   background-color: transparent;
   backdrop-filter: none;
   border-radius: 0;
@@ -243,7 +252,7 @@
 
 /* Join Section styling inside combined container */
 .joinSectionContent {
-  padding: 3rem;
+  padding: 1.5rem;
   border-top: none;
 }
 
@@ -262,10 +271,10 @@
 }
 
 .sectionTitle {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 0.75rem;
 }
@@ -283,7 +292,7 @@
 
 .sectionContent {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
@@ -292,10 +301,10 @@
 }
 
 .joinSectionTitle {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 0.75rem;
 }
@@ -313,7 +322,7 @@
 
 .joinSectionText {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 2rem;
 }
@@ -368,11 +377,12 @@ a.linkedText:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .actionButton {
   font-weight: 600;
-  padding: 0.875rem 1.75rem;
+  padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   transition: all 0.2s ease;
   display: inline-flex;
@@ -382,6 +392,7 @@ a.linkedText:hover {
   letter-spacing: 0.5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 .actionButton:hover {
@@ -442,7 +453,11 @@ a.linkedText:hover {
 /* Media queries for responsive design */
 @media (min-width: 768px) {
   .heroTitle {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  
+  .heroText {
+    font-size: 1.25rem;
   }
   
   .combinedSection {
@@ -452,6 +467,26 @@ a.linkedText:hover {
   
   .logoText {
     font-size: 2.25rem;
+  }
+  
+  .joinButton {
+    display: inline-block;
+    width: auto;
+  }
+  
+  .aboutSection, 
+  .joinSectionContent {
+    padding: 3rem;
+  }
+  
+  .sectionTitle,
+  .joinSectionTitle {
+    font-size: 2.25rem;
+  }
+  
+  .sectionContent,
+  .joinSectionText {
+    font-size: 1.125rem;
   }
 }
 
