@@ -61,14 +61,34 @@
 .socialLink {
   color: white;
   transition: all 0.2s ease;
-  opacity: 0.8;
+  opacity: 0.9;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  /* Add semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;  /* Smaller size for mobile */
+  height: 32px; /* Smaller size for mobile */
+  border-radius: 50%;
+  padding: 6px;  /* Smaller padding for mobile */
 }
 
 .socialLink:hover {
   transform: translateY(-3px);
   color: rgb(110, 231, 183);
   opacity: 1;
+  /* Slightly darker background on hover */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Restore original size on desktop */
+@media (min-width: 768px) {
+  .socialLink {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
 }
 
 /* Hero section with background image */
