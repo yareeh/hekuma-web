@@ -316,27 +316,47 @@
   margin-bottom: 2rem;
 }
 
-/* Ensure all links don't show underlines or visited colors */
-.mainContainer a {
-  text-decoration: none;
-}
-
+/* Improve link style consistency for all states */
 .mainContainer a:visited {
-  color: inherit; /* Maintains the original color instead of the browser's visited color */
+  color: unset; /* Use the original color value instead of inheriting */
 }
 
-/* Update link text to explicitly disable underlines */
-.linkedText {
-  color: rgb(110, 231, 183);
+/* Ensure social links maintain color when visited */
+.socialLink:visited {
+  color: white;
+}
+
+/* Ensure join button maintains color when visited */
+.joinButton:visited {
+  color: white;
+}
+
+/* Ensure action buttons maintain color when visited */
+.actionButton:visited {
+  color: white;
+}
+
+/* Specific button types */
+.nimenhuutoButton:visited,
+.instagramButton:visited,
+.facebookButton:visited,
+.contactButton:visited {
+  color: white;
+}
+
+/* Fix for linkedText links */
+a.linkedText,
+a.linkedText:link,
+a.linkedText:visited {
+  color: rgb(110, 231, 183) !important; /* Force the correct color */
   font-weight: 500;
   transition: all 0.2s ease;
   text-decoration: none;
   margin: 0 0.3rem;
 }
 
-.linkedText:hover {
-  color: rgb(167, 243, 208);
-  /* Remove underline on hover */
+a.linkedText:hover {
+  color: rgb(167, 243, 208) !important; /* Force the hover color */
   text-decoration: none;
 }
 
@@ -461,4 +481,26 @@
     width: 110%;
     height: 110%;
   }
+}
+
+/* Ensure all button-style links don't have underlines */
+a.joinButton,
+a.actionButton,
+a.nimenhuutoButton,
+a.instagramButton, 
+a.facebookButton,
+a.contactButton,
+a.joinButton:visited,
+a.actionButton:visited,
+a.nimenhuutoButton:visited,
+a.instagramButton:visited,
+a.facebookButton:visited,
+a.contactButton:visited,
+a.joinButton:hover,
+a.actionButton:hover,
+a.nimenhuutoButton:hover,
+a.instagramButton:hover,
+a.facebookButton:hover,
+a.contactButton:hover {
+  text-decoration: none !important;
 } 
