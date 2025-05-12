@@ -197,10 +197,12 @@
 /* Combined About and Join Sections Container */
 .combinedSection {
   margin: 6rem 2rem;
+  margin-top: -300px; /* Create overlap with hero section */
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Ensure it appears on top of heroOverlay */
 }
 
 .combinedSectionBackground {
@@ -445,6 +447,7 @@ a.linkedText:hover {
   
   .combinedSection {
     margin: 6rem 3rem;
+    margin-top: -300px;
   }
   
   .logoText {
@@ -455,6 +458,7 @@ a.linkedText:hover {
 @media (min-width: 1024px) {
   .combinedSection {
     margin: 6rem 5rem;
+    margin-top: -300px;
   }
   
   .aboutSection,
