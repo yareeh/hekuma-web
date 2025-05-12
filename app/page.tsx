@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaFacebook, FaEnvelope, FaGlobe } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaEnvelope } from "react-icons/fa";
 import styles from './styles/HomePage.module.css';
 import fs from 'fs';
 import path from 'path';
@@ -85,7 +85,13 @@ export default async function Home() {
             <FaFacebook size={24} />
           </Link>
           <Link href="https://hekumamtb.nimenhuuto.com/" aria-label="Nimenhuuto" className={styles.socialLink}>
-            <FaGlobe size={22} />
+            <Image 
+              src="/images/nimenhuuto.png" 
+              alt="Nimenhuuto"
+              width={24} 
+              height={24}
+              className={styles.nimenhuutoIcon}
+            />
           </Link>
           <Link href="mailto:hekumamtb@gmail.com" aria-label="Email" className={styles.socialLink}>
             <FaEnvelope size={22} />
@@ -125,7 +131,13 @@ export default async function Home() {
                     href="https://hekumamtb.nimenhuuto.com/"
                     className={styles.nimenhuutoButton}
                   >
-                    <FaGlobe size={18} />
+                    <Image 
+                      src="/images/nimenhuuto.png" 
+                      alt="Nimenhuuto"
+                      width={18} 
+                      height={18}
+                      className={styles.nimenhuutoIcon}
+                    />
                     Nimenhuuto
                   </Link>
                   <Link

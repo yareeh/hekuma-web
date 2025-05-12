@@ -542,4 +542,16 @@ a.instagramButton:hover,
 a.facebookButton:hover,
 a.contactButton:hover {
   text-decoration: none !important;
+}
+
+/* Nimenhuuto icon styling */
+.nimenhuutoIcon {
+  display: block;
+  filter: brightness(0) invert(1); /* Make the icon white */
+  transition: filter 0.2s ease;
+}
+
+/* Match other icon hover effects */
+.socialLink:hover .nimenhuutoIcon {
+  filter: brightness(0) invert(0.8) sepia(1) hue-rotate(110deg) saturate(3); /* Match the teal hover color */
 } 
