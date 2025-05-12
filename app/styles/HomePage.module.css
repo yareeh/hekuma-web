@@ -39,6 +39,9 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  /* Smaller size for mobile */
+  width: 90px;
+  height: 90px;
 }
 
 .logoContainer::before {
@@ -47,7 +50,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110%;  /* Larger than the container */
+  width: 110%;
   height: 110%;
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 50%;
@@ -510,12 +513,18 @@ a.linkedText:hover {
 .logo {
   position: relative;
   z-index: 1;
-  /* Ensure smooth scaling */
   object-fit: contain;
+  width: 100%;
+  height: auto;
 }
 
-/* Desktop size (3x) */
+/* Desktop size */
 @media (min-width: 768px) {
+  .logoContainer {
+    width: 180px;
+    height: 180px;
+  }
+  
   .logoContainer::before {
     width: 110%;
     height: 110%;

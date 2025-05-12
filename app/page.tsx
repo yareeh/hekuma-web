@@ -72,8 +72,8 @@ export default async function Home() {
           <Image 
             src="/images/logo.svg" 
             alt="Hekuma MTB Logo" 
-            width={180} 
-            height={180} 
+            width={90} 
+            height={90} 
             className={styles.logo}
           />
         </div>
