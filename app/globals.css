@@ -44,8 +44,35 @@ body {
 /* Add global link styles */
 a {
   text-decoration: none !important;
+  color: #34d399 !important; /* Brighter emerald green with better contrast */
+  font-weight: 500 !important; /* Increased from default 400 to 500 */
 }
 
 a:visited {
-  color: inherit !important;
+  color: #34d399 !important; /* Same brighter green for visited links */
+  font-weight: 500 !important; /* Maintain consistent weight for visited links */
+}
+
+/* Make sure special links like buttons remain white */
+a[class*="Button"], 
+a.socialLink {
+  color: white !important;
+}
+
+/* We need to override the color for links with specific styling */
+.socialLink, 
+.socialLink:visited,
+.joinButton,
+.joinButton:visited,
+.actionButton,
+.actionButton:visited,
+.nimenhuutoButton,
+.nimenhuutoButton:visited,
+.instagramButton, 
+.instagramButton:visited,
+.facebookButton,
+.facebookButton:visited,
+.contactButton,
+.contactButton:visited {
+  color: white !important;
 }
