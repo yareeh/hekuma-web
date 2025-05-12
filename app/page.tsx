@@ -78,10 +78,10 @@ export default async function Home() {
           />
         </div>
         <div className={styles.socialLinks}>
-          <Link href="https://www.instagram.com/hekumamtb/" aria-label="Instagram" className={styles.socialLink}>
+          <Link href="https://www.instagram.com/hekuma_mtb/" aria-label="Instagram" className={styles.socialLink}>
             <FaInstagram size={24} />
           </Link>
-          <Link href="https://www.facebook.com/groups/hekumamtb/" aria-label="Facebook" className={styles.socialLink}>
+          <Link href="https://www.facebook.com/profile.php?id=61572812683322" aria-label="Facebook" className={styles.socialLink}>
             <FaFacebook size={24} />
           </Link>
           <Link href="https://hekumamtb.nimenhuuto.com/" aria-label="Nimenhuuto" className={styles.socialLink}>
@@ -141,14 +141,14 @@ export default async function Home() {
                     Nimenhuuto
                   </Link>
                   <Link
-                    href="https://www.instagram.com/hekumamtb/"
+                    href="https://www.instagram.com/hekuma_mtb/"
                     className={styles.instagramButton}
                   >
                     <FaInstagram size={18} />
                     Instagram
                   </Link>
                   <Link
-                    href="https://www.facebook.com/groups/hekumamtb/"
+                    href="https://www.facebook.com/profile.php?id=61572812683322"
                     className={styles.facebookButton}
                   >
                     <FaFacebook size={18} />
