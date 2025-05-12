@@ -34,6 +34,21 @@
 .logoContainer {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logoContainer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;  /* Larger than the container */
+  height: 110%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .welcomeText {
@@ -410,16 +425,16 @@
 
 /* Add this to your existing HomePage.module.css file */
 .logo {
-  width: 120px;
-  height: 120px;
+  position: relative;
+  z-index: 1;
   /* Ensure smooth scaling */
   object-fit: contain;
 }
 
 /* Desktop size (3x) */
 @media (min-width: 768px) {
-  .logo {
-    width: 240px;
-    height: 240px;
+  .logoContainer::before {
+    width: 110%;
+    height: 110%;
   }
 } 
