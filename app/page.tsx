@@ -2,8 +2,68 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaInstagram, FaFacebook, FaEnvelope, FaGlobe } from "react-icons/fa";
 import styles from './styles/HomePage.module.css';
+import fs from 'fs';
+import path from 'path';
+import { remark } from 'remark';
+import html from 'remark-html';
 
-export default function Home() {
+// Function to get markdown content
+async function getMarkdownContent(filename: string) {
+  const filePath = path.join(process.cwd(), 'public/content', `${filename}.md`);
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  
+  // Use remark to convert markdown into HTML string
+  const processedContent = await remark()
+    .use(html)
+    .process(fileContents);
+  
+  return processedContent.toString();
+}
+
+// Add a className mapping function to apply proper styling to markdown elements
+function applyClassesToContent(htmlContent: string, classMap: Record<string, string>): string {
+  let styledContent = htmlContent;
+  
+  // Apply h1 styling for hero title
+  if (classMap.h1) {
+    styledContent = styledContent.replace(/<h1/g, `<h1 class="${classMap.h1}"`);
+  }
+  
+  // Apply p styling for hero text
+  if (classMap.p) {
+    styledContent = styledContent.replace(/<p/g, `<p class="${classMap.p}"`);
+  }
+  
+  // Apply h2 styling for section titles
+  if (classMap.h2) {
+    styledContent = styledContent.replace(/<h2/g, `<h2 class="${classMap.h2}"`);
+  }
+  
+  return styledContent;
+}
+
+export default async function Home() {
+  // Get markdown content
+  const heroContent = await getMarkdownContent('hero');
+  const aboutContent = await getMarkdownContent('about');
+  const joinContent = await getMarkdownContent('join');
+  
+  // Apply classes to maintain original styling
+  const styledHeroContent = applyClassesToContent(heroContent, {
+    h1: styles.heroTitle,
+    p: styles.heroText
+  });
+  
+  const styledAboutContent = applyClassesToContent(aboutContent, {
+    h2: styles.sectionTitle,
+    p: styles.sectionContent
+  });
+  
+  const styledJoinContent = applyClassesToContent(joinContent, {
+    h2: styles.joinSectionTitle,
+    p: styles.joinSectionText
+  });
+  
   return (
     <main className={styles.mainContainer}>
       {/* Header with logo and social links */}
@@ -39,17 +99,8 @@ export default function Home() {
           <div className={styles.heroBackground}></div>
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
-            <h2 className={styles.heroTitle}>
-              Maastopyöräilyä naisille Helsingissä
-            </h2>
-            <p className={styles.heroText}>
-              Tervetuloa Hekuma MTB:n pariin - olemme Helsinkiläinen naisten maastopyöräilyseura, 
-              joka tarjoaa hauskaa yhteisöllistä pyöräilyä kaikentasoisille harrastajille.
-            </p>
-            <Link
-              href="https://hekumamtb.nimenhuuto.com/"
-              className={styles.joinButton}
-            >
+            <div dangerouslySetInnerHTML={{ __html: styledHeroContent }} />
+            <Link href="https://hekumamtb.nimenhuuto.com/" className={styles.joinButton}>
               Liity mukaan
             </Link>
           </div>
@@ -62,49 +113,13 @@ export default function Home() {
           <div className={styles.combinedSectionContent}>
             {/* About Section */}
             <section className={styles.aboutSection}>
-              <h2 className={styles.sectionTitle}>Meistä</h2>
-              <div className={styles.sectionContent}>
-                <p>
-                  Hekuma MTB on vuonna 2017 perustettu maastopyöräilyseura kaikentasoisille 
-                  naisille Helsingissä. Järjestämme yhteislenkkejä eri puolilla 
-                  pääkaupunkiseutua läpi vuoden.
-                </p>
-                <p>
-                  Hekuman toiminnan perustana on yhteisöllisyys, hauskanpito ja 
-                  toistemme kannustaminen. Lenkeillämme kukaan ei jää yksin ja 
-                  odottelemme aina toisiamme.
-                </p>
-                <p>
-                  Harjoituksia järjestetään eri tasoisille kuskeille, ja mukaan voi tulla
-                  matalalla kynnyksellä. Tervetuloa mukaan!
-                </p>
-              </div>
+              <div dangerouslySetInnerHTML={{ __html: styledAboutContent }} />
             </section>
 
-            {/* Join Us Section */}
-            <section className={styles.joinSection}>
+            {/* Join Section */}
+            <section id="join" className={styles.joinSection}>
               <div className={styles.joinSectionContent}>
-                <h2 className={styles.joinSectionTitle}>Tule mukaan</h2>
-                <div className={styles.joinSectionText}>
-                  <p>
-                    Toimintaamme voit osallistua liittymällä
-                    <Link href="https://hekumamtb.nimenhuuto.com/" className={styles.linkedText}>
-                      Nimenhuuto-sivullemme
-                    </Link>, 
-                    jossa julkaisemme kaikki tulevat lenkit ja tapahtumat.
-                  </p>
-                  <p>
-                    Seuraa meitä myös
-                    <Link href="https://www.instagram.com/hekumamtb/" className={styles.linkedText}>
-                      Instagramissa
-                    </Link>
-                    ja
-                    <Link href="https://www.facebook.com/groups/hekumamtb/" className={styles.linkedText}>
-                      Facebook-ryhmässämme
-                    </Link>
-                    saadaksesi ajankohtaista tietoa toiminnastamme.
-                  </p>
-                </div>
+                <div dangerouslySetInnerHTML={{ __html: styledJoinContent }} />
                 <div className={styles.joinButtons}>
                   <Link
                     href="https://hekumamtb.nimenhuuto.com/"

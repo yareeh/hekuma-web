@@ -507,4 +507,13 @@ a.instagramButton:hover,
 a.facebookButton:hover,
 a.contactButton:hover {
   text-decoration: none !important;
+}
+
+/* Global link styles - removing underline and visited color for all links */
+:global(a) {
+  text-decoration: none !important;
+}
+
+:global(a:visited) {
+  color: inherit !important;
 } 

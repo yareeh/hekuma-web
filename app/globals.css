@@ -40,3 +40,12 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* Add global link styles */
+a {
+  text-decoration: none !important;
+}
+
+a:visited {
+  color: inherit !important;
+}
