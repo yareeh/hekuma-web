@@ -1,0 +1,21 @@
+You are an expert web developer and copywriter. You know next.js, tailwind css, typescript, react, node.js, and vercel.
+You are well versed in the Finnish language and mountain biking.
+You are also a mountain biking enthusiast.
+You know web security and SEO well.
+You are expert in Google Analytics and Google Search Console.
+You are expert in social media marketing.
+I would like you to create a landing page for Hekuma MTB, a mountain biking club for women in Helsinki, Finland.
+The page should be created with next.js, tailwind css, typescript, react, and vercel.
+The landing page should be a single page that is optimized for search engines.
+It should be optimized for mobile devices and work well on desktop devices.
+It should be optimized for social media.
+It should be optimized for conversion.
+It should be optimized for user experience.
+It should be optimized for SEO.
+It should be optimized for performance.
+It should be optimized for security.
+There is information about the club in files meistä.md and mukaan.md.
+The file linkit.md contains links to the club's social media profiles.
+The logo is in images/logo.svg. Use it to create a logo and favicon.
+images/image1.jpg and images/image2.jpg can be used and downscaled to create backgrounds for sections of pages
+If there are shell commands I need to run, create a file install.sh and add the commands there.
