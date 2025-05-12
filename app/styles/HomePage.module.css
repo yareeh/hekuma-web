@@ -1,0 +1,405 @@
+/* Base styling */
+.mainContainer {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background-color: #0c422d;
+}
+
+/* Main content container */
+.contentContainer {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+}
+
+/* Header - transparent with minimal styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.welcomeText {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  opacity: 0.8;
+  color: white;
+}
+
+.logoText {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-left: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.25rem;
+}
+
+/* Add a subtle text shadow to ensure header text remains readable */
+.socialLink {
+  color: white;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.socialLink:hover {
+  transform: translateY(-3px);
+  color: rgb(110, 231, 183);
+  opacity: 1;
+}
+
+/* Hero section with background image */
+.heroSection {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  background: url('/images/image2.jpg') center center / cover no-repeat;
+  z-index: 1;
+}
+
+/* Hero section overlay - extremely light */
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(30, 30, 30, 0.05), rgba(20, 20, 20, 0.2));
+  z-index: 2;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 800px;
+  padding: 3rem;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroText {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.joinButton {
+  background-color: rgb(16, 185, 129);
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.joinButton:hover {
+  background-color: rgb(5, 150, 105);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Combined About and Join Sections Container */
+.combinedSection {
+  margin: 6rem 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.combinedSectionBackground {
+  position: absolute;
+  inset: 0;
+  background: url('/images/image1.jpg') center center / cover no-repeat;
+  z-index: 0;
+}
+
+/* Combined section overlay - extremely light */
+.combinedSectionOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(40, 40, 40, 0.2), rgba(20, 20, 20, 0.3));
+  z-index: 1;
+}
+
+.combinedSectionContent {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* About Section styling inside combined container */
+.aboutSection {
+  margin: 0;
+  padding: 3rem;
+  background-color: transparent;
+  backdrop-filter: none;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Join Section styling inside combined container */
+.joinSectionContent {
+  padding: 3rem;
+  border-top: none;
+}
+
+.joinSection {
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  background: none;
+  position: static;
+}
+
+.joinSectionBackground, 
+.joinSectionOverlay {
+  display: none;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: rgb(16, 185, 129);
+  border-radius: 3px;
+}
+
+.sectionContent {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.sectionContent p {
+  margin-bottom: 1.5rem;
+}
+
+.joinSectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.joinSectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: rgb(16, 185, 129);
+  border-radius: 3px;
+}
+
+.joinSectionText {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.linkedText {
+  color: rgb(110, 231, 183);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+.linkedText:hover {
+  text-decoration: underline;
+  color: rgb(167, 243, 208);
+}
+
+/* Join buttons container */
+.joinButtons {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.actionButton {
+  font-weight: 600;
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.actionButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.nimenhuutoButton {
+  composes: actionButton;
+  background-color: rgb(16, 185, 129);
+  color: white;
+}
+
+.nimenhuutoButton:hover {
+  background-color: rgb(5, 150, 105);
+}
+
+.instagramButton {
+  composes: actionButton;
+  background-color: rgb(219, 39, 119);
+  color: white;
+}
+
+.instagramButton:hover {
+  background-color: rgb(190, 24, 93);
+}
+
+.facebookButton {
+  composes: actionButton;
+  background-color: rgb(37, 99, 235);
+  color: white;
+}
+
+.facebookButton:hover {
+  background-color: rgb(30, 64, 175);
+}
+
+.contactButton {
+  composes: actionButton;
+  background-color: rgb(75, 85, 99);
+  color: white;
+}
+
+.contactButton:hover {
+  background-color: rgb(55, 65, 81);
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  padding: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 4rem;
+  }
+  
+  .combinedSection {
+    margin: 6rem 3rem;
+  }
+  
+  .logoText {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .combinedSection {
+    margin: 6rem 5rem;
+  }
+  
+  .aboutSection,
+  .joinSectionContent {
+    padding: 4rem;
+  }
+  
+  .heroContent {
+    padding: 4rem;
+  }
+}
+
+/* Add this to your existing HomePage.module.css file */
+.logo {
+  width: 120px;
+  height: 120px;
+  /* Ensure smooth scaling */
+  object-fit: contain;
+}
+
+/* Desktop size (3x) */
+@media (min-width: 768px) {
+  .logo {
+    width: 240px;
+    height: 240px;
+  }
+} 
