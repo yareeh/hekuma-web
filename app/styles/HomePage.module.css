@@ -5,20 +5,24 @@
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
   background-color: #0c422d;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Main content container */
 .contentContainer {
   position: relative;
   z-index: 10;
-  margin: 0 auto;
+  margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
   width: 100%;
   padding: 0;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* Header - transparent with minimal styling */
@@ -32,6 +36,8 @@
   left: 0;
   right: 0;
   z-index: 20; /* Increased to be above combinedSection's z-index */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logoContainer {
@@ -112,7 +118,7 @@
 /* Hero section with background image */
 .heroSection {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -122,6 +128,12 @@
   min-height: 100vh;
   height: auto;
   padding-top: 80px; /* Account for header */
+  overflow-x: hidden;
+  box-sizing: border-box;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .heroBackground {
@@ -129,6 +141,8 @@
   inset: 0;
   background: url('/images/image2.webp') center center / cover no-repeat;
   z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 /* Hero section overlay - extremely light */
@@ -149,6 +163,7 @@
   text-align: center;
   color: white;
   margin-top: 0;
+  box-sizing: border-box;
 }
 
 .heroTitle {
@@ -195,6 +210,7 @@
   margin-right: auto;
   max-width: 90%;
   top: 60%; /* Position below the hero title */
+  box-sizing: border-box;
 }
 
 .combinedSectionBackground {
@@ -461,11 +477,27 @@ a.linkedText:hover {
   .joinSectionText {
     font-size: 1.125rem;
   }
+  
+  /* Restore desktop width for hero section */
+  .heroSection {
+    width: 100%;
+    left: auto;
+    right: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Also restore container width */
+  .contentContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1024px) {
   .combinedSection {
-    margin: 6rem 5rem;
+    margin: 6rem auto;
+    max-width: 80%;
   }
   
   .aboutSection,
@@ -475,6 +507,11 @@ a.linkedText:hover {
   
   .heroContent {
     padding: 4rem;
+  }
+  
+  /* Ensure container has proper max-width */
+  .contentContainer {
+    max-width: 1280px;
   }
 }
 
