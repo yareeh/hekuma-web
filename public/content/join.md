@@ -1,5 +1,14 @@
-## Tule mukaan
+## Näin pääset mukaan
 
-Toimintaamme voit osallistua liittymällä [Nimenhuuto-sivullemme](https://hekumamtb.nimenhuuto.com/), jossa julkaisemme kaikki tulevat lenkit ja tapahtumat.
+**1. Tule mukaan lenkille**
+👉 Kaikki viikkolenkit julkaistaan [Nimenhuudossa](https://hekumamtb.nimenhuuto.com/events). Voit tulla mukaan kokeilemaan ilman jäsenyyttä.
 
-Seuraa meitä myös [Instagramissa](https://www.instagram.com/hekuma_mtb/) ja [Facebook-ryhmässämme](https://www.facebook.com/profile.php?id=61572812683322) saadaksesi ajankohtaista tietoa toiminnastamme. 
+**2. Liity jäseneksi**
+👉 Vuoden 2025 jäsenmaksu on 25 €. Sen voit maksaa helposti [Holvin verkkokaupassa](https://holvi.com/shop/hekumamtb).
+Jäsenenä saat:
+
+* Osallistua viikkolenkeille maksutta
+* Alennuksia kursseista ja tapahtumista
+* Etuja ja tarjouksia yhteistyökumppaneilta
+
+**Tule messiin, metsä kutsuu!**

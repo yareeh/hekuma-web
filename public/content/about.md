@@ -1,9 +1,12 @@
 ## Meistä
 
-Hekuma MTB on vuonna 2017 perustettu maastopyöräilyseura kaikentasoisille 
-naisille Helsingissä. Järjestämme yhteislenkkejä eri puolilla 
-pääkaupunkiseutua läpi vuoden.
+**Aktiivinen mimmilenkkiporukka perusti Hekuma MTB ry:n syksyllä 2023 .**
 
-Hekuman toiminnan perustana on yhteisöllisyys, hauskanpito ja toistemme kannustaminen. Lenkeillämme kukaan ei jää yksin ja odottelemme aina toisiamme.
+Toiminnan ytimessä ovat viikoittaiset maastolenkit Helsingin keskuspuistossa ja muilla pääkaupunkiseudun reiteillä.
+Nimemme tulee sanoista *Helsingin Keskuspuiston Upeimmat Mimmit Ajossa* – ja sitä me juuri olemme! 😄
 
-Harjoituksia järjestetään eri tasoisille kuskeille, ja mukaan voi tulla matalalla kynnyksellä. Tervetuloa mukaan! 
+Lenkkien lisäksi järjestämme kursseja, tapahtumia ja tuotamme sisältöä, joka kannustaa mukaan. Hekuman tärkein voima on yhteisö – porukassa on hauskempaa. Taidot ja rohkeus karttuvat yhdessä tekemällä.
+
+**Meidän yhteisö = sinun tuki**
+
+Hekuman WhatsApp-ryhmässä on mukana iso joukko pyöräileviä mimmiä. Siellä jaetaan vinkkejä, kysytään neuvoa ja löydetään ajoseuraa.

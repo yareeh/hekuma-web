@@ -1,4 +1,3 @@
-# Maastopyöräilyä naisille Helsingissä
+# Mikä on Hekuma MTB?
 
-Tervetuloa Hekuma MTB:n pariin - olemme Helsinkiläinen naisten maastopyöräilyseura, 
-joka tarjoaa hauskaa yhteisöllistä pyöräilyä kaikentasoisille harrastajille.
+Hekuma edistää naisten maastopyöräilyä, tasa-arvoistaa lajia ja madaltaa kynnystä kokeilla sitä. Meille olet tervetullut juuri sellaisena kuin olet – olet sitten aloittelija tai edistyneempi maastopyöräilijä.
