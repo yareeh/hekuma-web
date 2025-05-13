@@ -138,63 +138,61 @@ export default async function Home() {
             
             <div className={styles.heroContent}>
               <div dangerouslySetInnerHTML={{ __html: styledHeroContent }} />
-            </div>
-          </section>
+                <div className={styles.combinedSection}>
+                  <div className={styles.combinedSectionBackground}></div>
+                  <div className={styles.combinedSectionOverlay}></div>
+                  <div className={styles.combinedSectionContent}>
+                    {/* About Section */}
+                    <section className={styles.aboutSection}>
+                      <div dangerouslySetInnerHTML={{ __html: styledAboutContent }} />
+                    </section>
 
-          {/* Combined About and Join Section */}
-          <div className={styles.combinedSection}>
-            <div className={styles.combinedSectionBackground}></div>
-            <div className={styles.combinedSectionOverlay}></div>
-            <div className={styles.combinedSectionContent}>
-              {/* About Section */}
-              <section className={styles.aboutSection}>
-                <div dangerouslySetInnerHTML={{ __html: styledAboutContent }} />
-              </section>
-
-              {/* Join Section */}
-              <section id="join" className={styles.joinSection}>
-                <div className={styles.joinSectionContent}>
-                  <div dangerouslySetInnerHTML={{ __html: styledJoinContent }} />
-                  <div className={styles.joinButtons}>
-                    <Link
-                      href="https://hekumamtb.nimenhuuto.com/"
-                      className={styles.nimenhuutoButton}
-                    >
-                      <Image 
-                        src="/images/nimenhuuto.png" 
-                        alt="Nimenhuuto"
-                        width={18} 
-                        height={18}
-                        className={styles.nimenhuutoIcon}
-                      />
-                      Nimenhuuto
-                    </Link>
-                    <Link
-                      href="https://www.instagram.com/hekuma_mtb/"
-                      className={styles.instagramButton}
-                    >
-                      <FaInstagram size={18} />
-                      Instagram
-                    </Link>
-                    <Link
-                      href="https://www.facebook.com/profile.php?id=61572812683322"
-                      className={styles.facebookButton}
-                    >
-                      <FaFacebook size={18} />
-                      Facebook
-                    </Link>
-                    <Link
-                      href="mailto:hekumamtb@gmail.com"
-                      className={styles.contactButton}
-                    >
-                      <FaEnvelope size={16} />
-                      Ota yhteyttä
-                    </Link>
+                    {/* Join Section */}
+                    <section id="join" className={styles.joinSection}>
+                      <div className={styles.joinSectionContent}>
+                        <div dangerouslySetInnerHTML={{ __html: styledJoinContent }} />
+                        <div className={styles.joinButtons}>
+                          <Link
+                            href="https://hekumamtb.nimenhuuto.com/"
+                            className={styles.nimenhuutoButton}
+                          >
+                            <Image 
+                              src="/images/nimenhuuto.png" 
+                              alt="Nimenhuuto"
+                              width={18} 
+                              height={18}
+                              className={styles.nimenhuutoIcon}
+                            />
+                            Nimenhuuto
+                          </Link>
+                          <Link
+                            href="https://www.instagram.com/hekuma_mtb/"
+                            className={styles.instagramButton}
+                          >
+                            <FaInstagram size={18} />
+                            Instagram
+                          </Link>
+                          <Link
+                            href="https://www.facebook.com/profile.php?id=61572812683322"
+                            className={styles.facebookButton}
+                          >
+                            <FaFacebook size={18} />
+                            Facebook
+                          </Link>
+                          <Link
+                            href="mailto:hekumamtb@gmail.com"
+                            className={styles.contactButton}
+                          >
+                            <FaEnvelope size={16} />
+                            Ota yhteyttä
+                          </Link>
+                        </div>
+                      </div>
+                    </section>
                   </div>
                 </div>
-              </section>
             </div>
-          </div>
+          </section>
         </div>
       </main>
     </>
