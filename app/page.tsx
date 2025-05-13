@@ -163,11 +163,6 @@ export default async function Home() {
             </section>
           </div>
         </div>
-
-        {/* Footer */}
-        <footer className={styles.footer}>
-          <p>© {new Date().getFullYear()} Hekuma MTB - Naisten maastopyöräilyseura Helsingissä</p>
-        </footer>
       </div>
     </main>
   );

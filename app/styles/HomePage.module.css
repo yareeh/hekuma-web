@@ -417,16 +417,6 @@ a.linkedText:hover {
   background-color: rgb(55, 65, 81);
 }
 
-/* Footer */
-.footer {
-  margin-top: auto;
-  padding: 2rem;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 /* Media queries for responsive design */
 @media (min-width: 768px) {
   .heroTitle {
