@@ -69,7 +69,7 @@ export default async function Home() {
     "@context": "https://schema.org",
     "@type": "SportsClub",
     "name": "Hekuma MTB",
-    "description": "Naisten maastopyöräilyseura Helsingissä",
+    "description": "Naisten maastopyöräily-yhdistys Helsingissä",
     "url": "https://hekumamtb.fi",
     "logo": "https://hekumamtb.fi/images/logo.svg",
     "foundingDate": "2023",

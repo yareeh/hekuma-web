@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Hekuma MTB - Naisten maastopyöräilyseura Helsingissä',
+  title: 'Hekuma MTB - Naisten maastopyöräily-yhdistys Helsingissä',
   description: 'Hekuma edistää naisten maastopyöräilyä, tasa-arvoistaa lajia ja madaltaa kynnystä kokeilla sitä. Aktiivinen mimmilenkkiporukka perusti Hekuma MTB ry:n syksyllä 2023. Järjestämme yhteislenkkejä eri puolilla pääkaupunkiseutua läpi vuoden.',
   keywords: ['maastopyöräily', 'mtb', 'naiset', 'helsinki', 'pyöräily', 'yhteislenkit', 'hekuma'],
   authors: [{ name: 'Hekuma MTB' }],
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'Hekuma MTB - Naisten maastopyöräilyseura Helsingissä',
+    title: 'Hekuma MTB - Naisten maastopyöräily-yhdistys Helsingissä',
     description: 'Hekuma edistää naisten maastopyöräilyä, tasa-arvoistaa lajia ja madaltaa kynnystä kokeilla sitä. Aktiivinen mimmilenkkiporukka perusti Hekuma MTB ry:n syksyllä 2023. Järjestämme yhteislenkkejä eri puolilla pääkaupunkiseutua läpi vuoden.',
     url: 'https://hekumamtb.fi',
     siteName: 'Hekuma MTB',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: 'https://hekumamtb.fi/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Hekuma MTB - Naisten maastopyöräilyseura',
+        alt: 'Hekuma MTB - Naisten maastopyöräily-yhdistys',
       }
     ],
     locale: 'fi_FI',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hekuma MTB - Naisten maastopyöräilyseura Helsingissä',
+    title: 'Hekuma MTB - Naisten maastopyöräily-yhdistys Helsingissä',
     description: 'Hekuma edistää naisten maastopyöräilyä, tasa-arvoistaa lajia ja madaltaa kynnystä kokeilla sitä. Aktiivinen mimmilenkkiporukka perusti Hekuma MTB ry:n syksyllä 2023. Järjestämme yhteislenkkejä eri puolilla pääkaupunkiseutua läpi vuoden.',
     images: ['https://hekumamtb.fi/images/og-image.jpg'],
   },
