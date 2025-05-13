@@ -106,9 +106,6 @@ export default async function Home() {
           <div className={styles.heroOverlay}></div>
           <div className={styles.heroContent}>
             <div dangerouslySetInnerHTML={{ __html: styledHeroContent }} />
-            <Link href="https://hekumamtb.nimenhuuto.com/" className={styles.joinButton}>
-              Liity mukaan
-            </Link>
           </div>
         </section>
 
