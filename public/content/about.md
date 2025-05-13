@@ -7,6 +7,6 @@ Nimemme tulee sanoista *Helsingin Keskuspuiston Upeimmat Mimmit Ajossa* – ja s
 
 Lenkkien lisäksi järjestämme kursseja, tapahtumia ja tuotamme sisältöä, joka kannustaa mukaan. Hekuman tärkein voima on yhteisö – porukassa on hauskempaa. Taidot ja rohkeus karttuvat yhdessä tekemällä.
 
-**Meidän yhteisö = sinun tuki**
+**Me olemme sinua varten**
 
 Hekuman WhatsApp-ryhmässä on mukana iso joukko pyöräileviä mimmiä. Siellä jaetaan vinkkejä, kysytään neuvoa ja löydetään ajoseuraa.
