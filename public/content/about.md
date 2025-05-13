@@ -1,6 +1,6 @@
 ## Meistä
 
-**Aktiivinen mimmilenkkiporukka perusti Hekuma MTB ry:n syksyllä 2023 .**
+**Aktiivinen mimmilenkkiporukka perusti Hekuma MTB ry:n syksyllä 2023.**
 
 Toiminnan ytimessä ovat viikoittaiset maastolenkit Helsingin keskuspuistossa ja muilla pääkaupunkiseudun reiteillä.
 Nimemme tulee sanoista *Helsingin Keskuspuiston Upeimmat Mimmit Ajossa* – ja sitä me juuri olemme! 😄
