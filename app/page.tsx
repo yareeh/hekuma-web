@@ -79,22 +79,22 @@ export default async function Home() {
         </div>
         <div className={styles.socialLinks}>
           <Link href="https://www.instagram.com/hekuma_mtb/" aria-label="Instagram" className={styles.socialLink}>
-            <FaInstagram size={24} />
+            <FaInstagram size={18} />
           </Link>
           <Link href="https://www.facebook.com/profile.php?id=61572812683322" aria-label="Facebook" className={styles.socialLink}>
-            <FaFacebook size={24} />
+            <FaFacebook size={18} />
           </Link>
           <Link href="https://hekumamtb.nimenhuuto.com/" aria-label="Nimenhuuto" className={styles.socialLink}>
             <Image 
               src="/images/nimenhuuto.png" 
               alt="Nimenhuuto"
-              width={24} 
-              height={24}
+              width={18} 
+              height={18}
               className={styles.nimenhuutoIcon}
             />
           </Link>
           <Link href="mailto:hekumamtb@gmail.com" aria-label="Email" className={styles.socialLink}>
-            <FaEnvelope size={22} />
+            <FaEnvelope size={16} />
           </Link>
         </div>
       </header>
@@ -158,7 +158,7 @@ export default async function Home() {
                     href="mailto:hekumamtb@gmail.com"
                     className={styles.contactButton}
                   >
-                    <FaEnvelope size={18} />
+                    <FaEnvelope size={16} />
                     Ota yhteyttä
                   </Link>
                 </div>
