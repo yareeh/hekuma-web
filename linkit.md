@@ -1,4 +1,0 @@
-- [Instagram](https://www.instagram.com/hekuma_mtb/)
-- [Facebook](https://www.facebook.com/profile.php?id=61572812683322)
-- [Nimenhuuto](https://hekumamtb.nimenhuuto.com)
-- [Sähköposti](mailto:hekumamtb@gmail.com)
