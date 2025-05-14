@@ -9,4 +9,4 @@ Lenkkien lisäksi järjestämme kursseja, tapahtumia ja tuotamme sisältöä, jo
 
 **Me olemme sinua varten**
 
-Hekuman WhatsApp-ryhmässä on mukana iso joukko pyöräileviä mimmiä. Siellä jaetaan vinkkejä, kysytään neuvoa ja löydetään ajoseuraa.
+Hekuman WhatsApp-ryhmässä on mukana iso joukko pyöräileviä mimmejä. Siellä jaetaan vinkkejä, kysytään neuvoa ja löydetään ajoseuraa.
