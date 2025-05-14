@@ -6,7 +6,9 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 15, 91, 64;
   --background-end-rgb: 8, 51, 36;
+  --link-color: #89f1cb; /* Brighter emerald green with better contrast */
 }
+
 
 html {
   overflow-x: hidden;
@@ -56,12 +58,12 @@ body {
 /* Add global link styles */
 a {
   text-decoration: none !important;
-  color: #34d399 !important; /* Brighter emerald green with better contrast */
+  color: var(--link-color) !important;
   font-weight: 500 !important; /* Increased from default 400 to 500 */
 }
 
 a:visited {
-  color: #34d399 !important; /* Same brighter green for visited links */
+  color: var(--link-color) !important; /* Same brighter green for visited links */
   font-weight: 500 !important; /* Maintain consistent weight for visited links */
 }
 
