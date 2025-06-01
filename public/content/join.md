@@ -12,3 +12,7 @@ Jäsenenä saat:
 * Etuja ja tarjouksia yhteistyökumppaneilta
 
 **Tule messiin, metsä kutsuu!**
+
+Tilaa puuvillapaitoja, kangaskasseja ja tarroja [Hekuman Spreadshopista](https://hekuma-mtb.myspreadshop.fi/).
+
+Hekuman korviksia, avaimenperiä ja heijastimia myy [Olen Loistava](https://www.olenloistava.fi/hekumamtb/).
