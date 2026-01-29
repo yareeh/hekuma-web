@@ -4,7 +4,7 @@
 👉 Kaikki viikkolenkit julkaistaan [Nimenhuudossa](https://hekumamtb.nimenhuuto.com/events). Voit tulla mukaan kokeilemaan ilman jäsenyyttä.
 
 **2. Liity jäseneksi**
-👉 Vuoden 2025 jäsenmaksu on 25 €. Sen voit maksaa helposti [Holvin verkkokaupassa](https://holvi.com/shop/hekumamtb).
+👉 Jäsenmaksu on 25 € vuodessa. Sen voit maksaa helposti [Holvin verkkokaupassa](https://holvi.com/shop/hekumamtb).
 Jäsenenä saat:
 
 * Osallistua viikkolenkeille maksutta
@@ -15,4 +15,4 @@ Jäsenenä saat:
 
 Tilaa puuvillapaitoja, kangaskasseja ja tarroja [Hekuman Spreadshopista](https://hekuma-mtb.myspreadshop.fi/).
 
-Hekuman korviksia, avaimenperiä ja heijastimia myy [Olen Loistava](https://www.olenloistava.fi/hekumamtb/).
+    Hekuman korviksia, avaimenperiä ja heijastimia myy [Olen Loistava](https://www.olenloistava.fi/hekumamtb/).
