@@ -15,4 +15,4 @@ Jäsenenä saat:
 
 Tilaa puuvillapaitoja, kangaskasseja ja tarroja [Hekuman Spreadshopista](https://hekuma-mtb.myspreadshop.fi/).
 
-    Hekuman korviksia, avaimenperiä ja heijastimia myy [Olen Loistava](https://www.olenloistava.fi/hekumamtb/).
+Hekuman korviksia, avaimenperiä ja heijastimia myy [Olen Loistava](https://www.olenloistava.fi/hekumamtb/).
